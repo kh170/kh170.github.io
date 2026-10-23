@@ -1,0 +1,21 @@
+PROJECTS HTML FOLDER — COPY INTO YOUR EXISTING WEBSITE
+
+1. Replace the existing folder named "projects" (no underscore) with this folder.
+   Keep your main index.html and existing "publications" and "assets" folders.
+2. The homepage already links to "projects/index.html".
+3. To write a short description on a project card, open projects/index.html
+   in a text editor. Search for the project's title and the comment
+   "YOUR OPTIONAL TWO-LINE PROJECT SUMMARY GOES HERE".
+   Insert, for example:
+      <p class="work-excerpt">My own description.</p>
+4. To write a project page, open projects/PROJECT-SLUG/index.html, search for
+   "WRITE YOUR PROJECT NARRATIVE HERE", and insert HTML after the comment.
+   Example:
+      <h2>Overview</h2>
+      <p>My own overview of the research.</p>
+5. Related publications link to your existing publications/SLUG/index.html
+   pages. Edit the <section class="related-publications"> block to change them.
+6. Projects with no confirmed related publications have no empty list.
+7. No website files outside "projects" have been changed.
+8. Do not share nonpublic datasets, confidential partner details, or internal
+   legislative findings without appropriate authorization.

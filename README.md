@@ -1,44 +1,41 @@
-# vCard - Personal portfolio
+# Sadia Rahman | Complete HTML Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+This package is the consolidated **static HTML** website. It contains no Google Scholar statistics panel or automated Scholar sync.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Install
 
-## Demo
+1. Save a backup of your existing `kh170.github.io` repository before changing anything.
+2. Unzip this archive.
+3. Copy the **contents** of the `Sadia_Complete_Website_No_Scholar` folder (not the folder itself) into the root of your GitHub repository.
+4. To avoid old pages sticking around, remove obsolete old paths such as `/write/`, old sample blog posts, and any previous Scholar metric scripts/data. Make sure the website root has `index.html`, `assets/`, `publications/`, `projects/`, `blog/`, and `experience/`.
+5. Double-click the root `index.html` to preview locally. Changes will not be deployed until *you* commit/push.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## Included
 
-## Prerequisites
+- Homepage `index.html`: original hero/headshot, education, work experience, expanded recent highlights, all navigation links.
+- `publications/index.html`: 14 items with category filters, including thesis, encyclopedia, policy note, economic report, and academic papers.
+- `publications/<slug>/index.html`: 14 simple detail pages, each with “Details coming soon”, original At a glance author/venue data, external links and GitHub buttons where they were previously provided. Full coauthor listings remain intact.
+- `projects/index.html`: three research projects plus six separate short projects, matching your requested order.
+- `projects/<slug>/index.html`: nine project detail pages with editable placeholders and related-publication links when known.
+- `blog/index.html`: clean empty Blog landing page (“New notes coming soon”), without a web editor or sample post.
+- `experience/index.html`: dedicated experience page with editable notes for three positions.
+- `assets/`: styles, navigation/filter JavaScript, favicon, your uploaded headshot and supporting assets.
 
-Before you begin, ensure you have met the following requirements:
+## How to edit
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+- Homepage, recent highlights, and experience snapshot: `index.html`
+- Your longer experience descriptions: `experience/index.html`
+- Publications list: `publications/index.html` (short summaries are blank until you add them)
+- Publication details: `publications/<slug>/index.html`
+- Projects list: `projects/index.html`; project detail pages live in each slug subfolder.
+- Blog placeholder: `blog/index.html`
 
-## Installing vCard
+Open HTML files in TextEdit **as plain text** or use VS Code. Please preserve the HTML tags when editing.
 
-To install **vCard**, follow these steps:
+## Scholar panel deliberately omitted
 
-Linux and macOS:
+No `assets/css/scholar-metrics.css`, `data/scholar-metrics.json`, `.github/workflows` Scholar updater, or SerpAPI setup is included.
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Reminder
 
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-MIT
+The ZIP is a local backup. It does **not** modify or deploy your GitHub site.

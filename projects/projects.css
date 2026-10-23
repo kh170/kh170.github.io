@@ -1,0 +1,34 @@
+/* Projects page only. Keeps the existing website styles untouched. */
+.project-list-section {padding-top: 58px;}
+.projects-main-grid {display: grid;grid-template-columns: repeat(3,minmax(0,1fr));gap: 19px;}
+.projects-short-grid {display: grid;grid-template-columns: repeat(3,minmax(0,1fr));gap: 19px;}
+.projects-main-grid .project-card {border-color:#d8e6f4;background:linear-gradient(155deg,#fff 47%,#f5faff 100%);}
+.project-card {min-height:252px;padding:27px;}
+.project-card h3 {font-size:19px;line-height:1.43;letter-spacing:-.035em;margin:0 0 28px;}
+.project-card .card-read {margin-top:auto;}
+.project-card:hover {transform:translateY(-4px);box-shadow:0 16px 40px rgba(30,73,110,.09);border-color:#a5c8ea;}
+.short-projects-heading {margin:68px 0 22px;display:flex;align-items:end;justify-content:space-between;gap:20px;}
+.short-projects-heading h2 {font-size:clamp(1.6rem,3vw,2.25rem);margin:0;}
+.short-projects-heading>span {font-size:12px;color:#7286a1;font-weight:700;}
+.projects-short-grid .project-card {min-height:220px;}
+.projects-short-grid .project-card h3 {font-size:17px;}
+.project-detail-body {min-height:340px;}
+.project-author-content {margin-bottom:35px;font-size:16px;line-height:1.9;color:#485e73;}
+.project-author-content:empty {display:none;}
+.project-author-content h2 {font-size:27px;margin:28px 0 14px;}
+.project-author-content p {margin:0 0 20px;}
+.related-publications {margin-top:18px;}
+.related-publications h2 {font-size:27px;margin:0 0 20px;}
+.related-paper-list {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.related-paper {border:1px solid #dce8f4;border-radius:13px;background:#fbfdff;padding:19px 20px;display:flex;flex-direction:column;gap:9px;transition:background .2s,border-color .2s;}
+.related-paper:hover {background:#eef7ff;border-color:#a6cbe9;}
+.related-paper-title {font:700 13px/1.55 'Manrope',sans-serif;color:#183960;}
+.related-paper-meta {font-size:11px;color:#3172ad;font-weight:700;}
+@media (max-width:950px) {.projects-main-grid,.projects-short-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:650px) {.projects-main-grid,.projects-short-grid,.related-paper-list {grid-template-columns:1fr;}.project-card,.projects-short-grid .project-card{min-height:185px;}.short-projects-heading {margin-top:46px;}}
+
+/* Simple placeholder until the project write-up is available. */
+.project-coming-soon{background:linear-gradient(125deg,#f4f9ff,#fbfdff);border:1px solid #dfeafa;border-radius:18px;padding:37px 34px;min-height:180px;display:flex;gap:15px;align-items:center}
+.project-coming-soon h2{font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.4;margin:0;color:#29496d;letter-spacing:-.025em}
+.project-coming-soon-icon{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:12px;background:#deedff;color:#2a69b3;font-size:20px}
+@media(max-width:620px){.project-coming-soon{padding:24px 20px;min-height:135px}}

@@ -1,0 +1,15 @@
+PUBLICATIONS — DROP-IN HTML FOLDER
+
+Replace the existing publications/ folder (without an underscore) in your static HTML website.
+Your homepage should link to publications/index.html or /publications/.
+
+Edit short 2-3 line summaries in publications/index.html; search for ADD YOUR OWN TWO-LINE SUMMARY.
+Edit each detail page in publications/<paper-slug>/index.html; search for ADD YOUR OWN LONGER PUBLICATION DESCRIPTION HERE.
+Use ordinary HTML tags <h2> and <p> for your writing. Do not replace these files with .md files.
+
+To add a future publisher or code link, find the disabled button on that paper's index.html and replace it with an <a> link.
+There is no GitHub code button for papers where you requested none.
+
+NOTE ABOUT GITHUB PAGES: If you have _publications/*.md files AND a root publications.html using Jekyll with permalink: /publications/, that is a different publishing architecture. Do not combine those routes with this static folder; the Jekyll route may overwrite the static page. The HTML drop-in is intended for the original offline HTML preview website.
+
+NEW ENTRY: "Social Network Analysis in Governance Network" (ESNAM 2027) has a local detail page but no external publication or GitHub link. It is a sole-authored encyclopedia chapter and is highlighted light blue.

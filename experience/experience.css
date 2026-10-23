@@ -1,0 +1,20 @@
+/* Experience page. Site-wide layout comes from assets/css/style.css */
+.roles-section{padding:72px 0 110px}
+.roles-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:58px;align-items:start}
+.roles-nav{position:sticky;top:24px;display:flex;flex-direction:column;gap:7px;padding-top:16px}
+.role-nav-title{font-size:10px;font-weight:800;letter-spacing:.17em;color:#7389a1;margin-bottom:10px}
+.roles-nav a{padding:11px 12px;border-radius:10px;color:#536c85;font-size:13px;font-weight:700;line-height:1.55;display:flex;align-items:start;justify-content:space-between;gap:8px;transition:background .2s,color .2s}
+.roles-nav a:hover{background:#eaf3ff;color:#1555ab}
+.roles-nav a span{color:#2e80c5}
+.roles-nav a.roles-back{border-top:1px solid #e0e9f2;border-radius:0;margin-top:15px;padding-top:22px;color:#1a60ac}
+.roles-content{display:flex;flex-direction:column;gap:25px}
+.role-panel{scroll-margin-top:30px;border:1px solid #e0e9f2;border-radius:22px;padding:35px 38px;background:#fff;box-shadow:0 10px 34px rgba(23,64,112,.045)}
+.role-metadata{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:17px}
+.role-date{display:inline-flex;align-items:center;border-radius:22px;padding:6px 11px;background:#e7f1ff;color:#195aa8;font-weight:800;font-size:11px;letter-spacing:.02em}
+.role-location{font-size:12px;font-weight:700;color:#7b8ea2}
+.role-panel h2{font-size:clamp(1.4rem,3vw,1.9rem);margin-bottom:10px;letter-spacing:-.045em}
+.role-organization{font-size:14px;color:#526a83;font-weight:700;line-height:1.7;margin:0 0 25px}
+.role-empty{display:flex;gap:12px;align-items:center;padding:25px;background:linear-gradient(120deg,#f5faff,#fafeff);border:1px dashed #c8daec;border-radius:13px;color:#6a8299;font-weight:600;font-size:14px}
+.role-pencil{height:32px;width:32px;flex:none;border-radius:10px;background:#e6f0fc;display:grid;place-items:center;color:#246bb7;font-size:16px}
+@media(max-width:900px){.roles-layout{grid-template-columns:1fr;gap:25px}.roles-nav{position:static;padding:0;flex-direction:row;flex-wrap:wrap;gap:4px}.role-nav-title{flex-basis:100%;margin-bottom:1px}.roles-nav a{font-size:12px}.roles-nav a.roles-back{margin-top:0;padding-top:11px;border:0}}
+@media(max-width:600px){.roles-section{padding:40px 0 75px}.role-panel{padding:25px 21px}.role-metadata{align-items:start;flex-direction:column}.role-empty{padding:18px}.roles-nav a{padding:9px 10px}}
