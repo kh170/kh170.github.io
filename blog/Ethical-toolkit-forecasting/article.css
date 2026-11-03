@@ -1,0 +1,75 @@
+/* Article-specific styles; the main site stylesheet remains unchanged. */
+:root { --post-blue:#1555ab; --post-navy:#122a4b; --post-muted:#637489; --post-border:#dfe9f5; }
+.article-hero{padding:64px 0 68px;position:relative;overflow:hidden}
+.article-hero:after{content:"";position:absolute;width:440px;height:440px;border:65px solid #e8f2fd;border-radius:50%;right:-160px;bottom:-320px;pointer-events:none}
+.article-hero .shell{position:relative;z-index:1;max-width:1160px}
+.article-backlink{display:inline-flex;gap:10px;align-items:center;color:var(--post-blue);font-size:12px;font-weight:800;margin-bottom:50px}
+.article-backlink:hover{color:#0e3b7d}
+.article-kicker,.gallery-eyebrow,.toc-label{display:flex;align-items:center;gap:12px;color:var(--post-blue);letter-spacing:.17em;font-size:10px;font-weight:800}
+.kicker-rule{width:23px;height:2px;background:#3279bc}
+.kicker-divider{color:#acbfd1;margin-left:-4px;margin-right:-4px}
+.article-hero h1{max-width:1000px;font-size:clamp(2.45rem,5.25vw,4.5rem);line-height:1.19;letter-spacing:-.066em;margin:24px 0 32px;color:var(--post-navy)}
+.article-byline{display:flex;align-items:center;gap:14px;color:var(--post-navy)}
+.byline-mark{display:grid;place-items:center;background:var(--post-blue);width:43px;height:43px;border-radius:13px;color:#fff;font-size:17px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.12em}
+.article-byline div{display:flex;flex-direction:column;gap:3px}
+.article-byline strong{font-size:12px}.article-byline div span{font-size:11px;color:#74879a}
+.article-layout{display:grid;grid-template-columns:minmax(0,785px) 255px;gap:clamp(35px,6vw,88px);align-items:start;padding-top:82px;padding-bottom:105px}
+.article-main{min-width:0}
+.article-opening p{font-size:16px;line-height:1.95;color:#4c6077;margin:0 0 19px}
+.article-opening{border-bottom:1px solid #e2ebf4;padding-bottom:30px;margin-bottom:44px}
+.article-section{scroll-margin-top:25px;margin-bottom:57px}
+.article-section h2{font-size:clamp(1.75rem,2.55vw,2.2rem);margin:0 0 22px;font-weight:800;letter-spacing:-.05em;line-height:1.29}
+.article-section p{font-size:15.5px;line-height:1.97;color:#4b5f76;margin:0 0 22px;overflow-wrap:anywhere}
+/* Word-style fully justified body copy on desktop and mobile. */
+.article-opening p, .article-section p { text-align:justify; text-justify:inter-word; }
+.article-prose a,.article-section a{color:var(--post-blue);text-decoration:underline;text-decoration-color:#8dafd8;text-decoration-thickness:1px;text-underline-offset:4px}
+.article-prose a:hover,.article-section a:hover{color:#0b3979;text-decoration-color:#0b3979}
+.article-section strong{font-weight:800;color:#1d3554}
+.article-aside{align-self:stretch}
+.toc-inner{position:sticky;top:30px;border-left:1px solid #dce7f3;padding:4px 0 4px 23px}
+.toc-label{font-size:10px;margin:0 0 19px;color:#7b91aa}
+.article-toc{display:flex;flex-direction:column;gap:1px}
+.article-toc a{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 0;color:#60758f;font-weight:700;font-size:12px;line-height:1.65;transition:color .2s}
+.article-toc a:hover,.article-toc a:focus-visible{color:var(--post-blue)}
+.toc-count{color:#8eabc5;font-size:10px}
+.toc-note{margin-top:26px;border-radius:12px;padding:15px;background:#f4f8fe;font-size:11px;line-height:1.8;color:#6b8198}
+.toolkit-gallery{margin:67px 0 70px;padding:28px;border:1px solid #d9e7f5;border-radius:24px;background:linear-gradient(155deg,#f6faff,#ebf4ff);scroll-margin-top:30px}
+.gallery-heading h2{margin:11px 0;font-size:29px;line-height:1.2;letter-spacing:-.055em}.gallery-period{color:#4a92cd}
+.gallery-heading p{font-size:13px;line-height:1.8;color:#627e9b;max-width:590px;margin:0}
+.gallery-controls{display:flex;align-items:center;justify-content:space-between;margin:25px 0 12px}
+.gallery-position{color:#1454a6;font-family:Manrope,sans-serif;font-size:18px;font-weight:800;letter-spacing:.055em;font-variant-numeric:tabular-nums}
+.gallery-position span{color:#7c9bbc;font-size:13px}
+.gallery-arrows{display:flex;gap:8px}
+.gallery-arrow{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;border:1px solid #b9d3ed;background:#fff;color:#1356a8;font-size:20px;transition:background .15s,transform .15s}
+.gallery-arrow:hover{background:#dfedfc;transform:translateY(-1px)}
+.gallery-arrow:focus-visible,.worksheet-thumbnail:focus-visible,.gallery-stage:focus-visible{outline:3px solid #68addc;outline-offset:3px}
+.gallery-stage{border:1px solid #d0e0ef;background:#fff;border-radius:15px;overflow:hidden;min-width:0}
+.toolkit-slide{margin:0}.toolkit-slide[hidden]{display:none!important}
+.worksheet-image-wrap{height:min(71vh,700px);min-height:360px;display:flex;align-items:center;justify-content:center;background:#f8fbff;padding:14px}
+.worksheet-image-wrap img{width:100%;height:100%;display:block;object-fit:contain;object-position:center}
+.worksheet-caption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-top:1px solid #e2ecf5;background:#fff}
+.worksheet-caption>div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.worksheet-caption strong{font-size:12px;font-weight:800;color:#1c3657}
+.worksheet-caption span{font-size:10px;color:#7a90a9}
+.worksheet-full{white-space:nowrap;font-size:11px;font-weight:800;color:var(--post-blue);display:inline-flex;gap:5px;align-items:center}
+.worksheet-full:hover{text-decoration:underline}
+.worksheet-full span{color:var(--post-blue);font-size:14px}
+.gallery-thumbnails{display:flex;gap:10px;margin-top:14px;overflow-x:auto;padding:2px 1px 9px;scrollbar-color:#b6cae3 transparent}
+.worksheet-thumbnail{border:2px solid transparent;background:#fff;border-radius:11px;padding:4px;position:relative;flex:0 0 71px;height:92px;opacity:.7;transition:opacity .16s,border-color .16s;overflow:hidden}
+.worksheet-thumbnail:hover,.worksheet-thumbnail.is-active{border-color:#2772c4;opacity:1}
+.worksheet-thumbnail img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:5px;display:block}
+.worksheet-thumbnail span{position:absolute;right:6px;bottom:5px;background:#134b93;color:#fff;border-radius:5px;font-size:10px;line-height:1;padding:4px 5px;font-weight:800}
+.article-endmark{display:flex;align-items:center;justify-content:center;gap:12px;margin:35px 0 24px}
+.article-endmark span{width:45px;height:1px;background:#d6e2ee}.article-endmark i{display:block;width:8px;height:8px;border-radius:50%;background:#2c7bba}
+.article-back-navigation{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;border-top:1px solid #e3edf6;padding:26px 0}
+.article-back-navigation a{font-weight:800;color:#1555ab;font-size:12px}
+.article-back-navigation a:hover{text-decoration:underline}
+@media(max-width:980px){.article-layout{grid-template-columns:minmax(0,1fr) 200px;gap:34px}.toc-inner{padding-left:16px}.toolkit-gallery{padding:22px}}
+@media(max-width:760px){.article-hero{padding:35px 0 44px}.article-backlink{margin-bottom:35px}.article-hero h1{font-size:clamp(2.3rem,8.4vw,3.7rem);line-height:1.22}.article-layout{display:block;padding-top:48px;padding-bottom:70px}.article-aside{display:none}.article-opening p,.article-section p{font-size:14.5px;line-height:1.9}.article-section{margin-bottom:42px}.article-section h2{font-size:26px}.toolkit-gallery{padding:17px;margin:47px 0 50px;border-radius:18px}.gallery-heading h2{font-size:25px}.gallery-heading p{font-size:12px}.worksheet-image-wrap{height:min(62vh,600px);min-height:285px;padding:8px}.worksheet-caption{padding:12px;gap:6px}.worksheet-caption strong{font-size:11px}.worksheet-full{font-size:10px}.worksheet-thumbnail{flex-basis:65px;height:87px}.article-back-navigation{gap:12px}}
+@media(max-width:380px){.worksheet-caption{flex-wrap:wrap}.gallery-arrows .gallery-arrow{width:38px;height:38px}}
+@media(prefers-reduced-motion:reduce){.gallery-arrow,.worksheet-thumbnail{transition:none}}
+
+/* Plain-text labels and author credit, with no bold emphasis. */
+.article-byline .byline-name{font-size:12px;color:var(--post-navy);font-weight:400}
+.worksheet-caption .worksheet-name{font-size:12px;font-weight:400;color:#1c3657}
+@media(max-width:620px){.worksheet-caption .worksheet-name{font-size:11px}}
