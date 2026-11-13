@@ -18,3 +18,50 @@
 .role-pencil{height:32px;width:32px;flex:none;border-radius:10px;background:#e6f0fc;display:grid;place-items:center;color:#246bb7;font-size:16px}
 @media(max-width:900px){.roles-layout{grid-template-columns:1fr;gap:25px}.roles-nav{position:static;padding:0;flex-direction:row;flex-wrap:wrap;gap:4px}.role-nav-title{flex-basis:100%;margin-bottom:1px}.roles-nav a{font-size:12px}.roles-nav a.roles-back{margin-top:0;padding-top:11px;border:0}}
 @media(max-width:600px){.roles-section{padding:40px 0 75px}.role-panel{padding:25px 21px}.role-metadata{align-items:start;flex-direction:column}.role-empty{padding:18px}.roles-nav a{padding:9px 10px}}
+
+.role-body {
+  max-width: 72ch;
+  color: #334d65;
+  line-height: 1.7;
+}
+.role-intro {
+  margin: 0;
+  padding: 0 0 0 1em;
+  border-left: 3px solid #3880bc;
+  color: #254762;
+  font-size: 1.07rem;
+}
+.work-section {
+  margin-top: 1.6rem;
+}
+.work-section h3 {
+  margin: 0 0 .35rem;
+  color: #143e65;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+.work-section p,
+.work-section ul {
+  margin: 0;
+}
+.work-section ul {
+  padding-left: 1.25rem;
+}
+.work-section li + li {
+  margin-top: .4rem;
+}
+.work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1.25rem;
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid #dbe7f2;
+}
+.work-links a {
+  color: #18578f;
+  font-size: .9rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
