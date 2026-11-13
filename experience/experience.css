@@ -53,15 +53,40 @@
 .work-links {
   display: flex;
   flex-wrap: wrap;
-  gap: .45rem 1.25rem;
+  gap: .65rem;
   margin: 1.5rem 0 0;
   padding-top: 1rem;
   border-top: 1px solid #dbe7f2;
 }
 .work-links a {
-  color: #18578f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 44px;
+  padding: .55rem 1rem;
+  border: 1px solid #b6cfe8;
+  border-radius: .65rem;
+  background: #edf5ff;
+  color: #154f88;
   font-size: .9rem;
   font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: .2em;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.work-links a:hover {
+  background: #18578f;
+  color: white;
+}
+.work-links a:focus-visible {
+  outline: 3px solid #18578f;
+  outline-offset: 3px;
+}
+@media (max-width: 480px) {
+  .work-links a {
+    flex-basis: 100%;
+  }
 }
